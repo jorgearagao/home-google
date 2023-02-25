@@ -8,6 +8,8 @@
 body {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
     margin: auto;
 }
 
@@ -102,13 +104,56 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 button {
-    border: 0;
+    border: 1px solid #F8F9FA;
     padding: 10px 15px;
     background-color: #F8F9FA;
     color: #3C4043;
     font-size: 14px;
 }
 
+button:hover {
+    border: 1px solid #ced0d1;
+    box-shadow: 1px 1px 3px 0px #ced0d1;
+
+}
+
 button:first-child {
     margin-right: 15px;
+}
+
+footer {
+    background-color: #F2F2F2;
+    font-size: 15px;
+    color: #70757a;
+}
+
+footer div {
+    padding: 15px 30px;
+}
+
+.country {
+    border-bottom: 1px solid #dad9d9;
+}
+
+.footerLinks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerLinks a {
+    text-decoration: none;
+    color: #70757a;
+    font-size: 14px;
+}
+
+.footerLinks a:hover {
+    text-decoration: underline;
+}
+
+.footerLinks .left a {
+    margin-right: 25px;
+}
+
+.footerLinks .right a {
+    margin-left: 25px;
 }
